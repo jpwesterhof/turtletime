@@ -1,0 +1,71 @@
+.object-card > a {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.home-banner-webgl {
+    position: relative;
+    background-image: none !important;
+    background: #000;
+}
+
+.home-banner-webgl > #webgl-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #000;
+}
+
+#home-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: #000;
+    z-index: -1;
+}
+
+.home-info-container {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    display: grid;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .home-info-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.home-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-info > h4 {
+}
+
+.home-info > p {
+    color: #AAA;
+    font-size: 1rem;
+}
+
+
+div#logo {
+    background-color: #fff;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 50%;
+}
+div#logo img {
+    margin: 7px;
+}
+nav.navbar p.head {
+    text-align: right;
+}

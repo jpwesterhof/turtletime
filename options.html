@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/layout_nf.css" />
+    <title>Turtletime</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container container-content">
+        <a class="navbar-brand" href="https://turtletoy.net/" target="_blank"><div id="logo"><img src="images/icon-48.png" /></div> Turtletime</a>
+        <p class="head">
+          An extension for Turtletoy.net that allows more leniency to turtle rendering times (disables timeout).<br />
+          Version 1.0 - 2024 by <a href="https://turtletoy.net/user/Jurgen" target="_blank">Jurgen</a>
+        </p>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="container-fluid container-content pt-3">
+        <h3 class="mt-3">Registered runs in localstorage
+        <a class="btn btn-outline-success rounded float-right d-none d-md-block" id="clearstorage">
+          Clear storage  
+        </a>
+      </h3>
+      <div class="clearfix home-objects"></div>
+    </div>
+    <script src="config.js"></script>
+    <script src="scripts/util.js"></script>
+    <script src="scripts/options.js" defer></script>
+  </body>
+</html>
